@@ -9,8 +9,8 @@ El siguiente viewmodel será una nueva instancia de viewmodel
 private val viewModel: CustomViewModel by viewModels()
 ```
 
-### Instanciar un viewmodel
-El siguiente viewmodel será una única instancia para la actividad donde se esté llamando
+### Instanciar un viewmodel compartido
+El siguiente viewmodel será una única instancia para la actividad y sus fragmentos
 ```
 private val viewModel: CustomViewModel by activityViewModels()
 ```

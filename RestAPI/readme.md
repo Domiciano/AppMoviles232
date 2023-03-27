@@ -1,9 +1,3 @@
-## Ejercicio en clase
-Para el ejercicio parta de este repositorio
-```
-https://github.com/Domiciano/Semana8Moviles
-```
-
 ### Dependencia para instanciar facilmente los viewmodels
 ```
 implementation 'androidx.fragment:fragment-ktx:1.4.1'

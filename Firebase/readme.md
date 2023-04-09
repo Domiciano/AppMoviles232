@@ -1,5 +1,5 @@
-# Aplicación para crear
-Esta es una aplicación Android que permite a los usuarios registrarse y hacer login para acceder a varias funcionalidades, incluyendo un perfil personalizado, chat y una comunidad de publicación de posts.
+# Aplicación a crear
+Crearemos una aplicación que permite a los usuarios registrarse y hacer login para acceder a varias funcionalidades, incluyendo un perfil personalizado, chat y una comunidad de publicación de posts. A continuación está la lista de características que irán aumentando conforme avancemos
 
 ## Características
 

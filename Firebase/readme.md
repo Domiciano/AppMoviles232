@@ -14,3 +14,12 @@ La funcionalidad de chat permite a los usuarios enviar y recibir mensajes entre 
 
 ### Comunidad
 La pestaña de Comunidad muestra un RecyclerView que contiene todos los posts publicados por los usuarios de la aplicación. Los usuarios pueden ver los posts y agregar comentarios o darles "me gusta". También pueden publicar sus propios posts para que los vea la comunidad.
+
+## Dependencias necesarias
+```
+implementation 'androidx.lifecycle:lifecycle-runtime-ktx:2.5.1'
+implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.5.1'
+implementation 'androidx.fragment:fragment-ktx:1.5.2'
+implementation "org.jetbrains.kotlinx:kotlinx-coroutines-play-services:1.6.4"
+
+```

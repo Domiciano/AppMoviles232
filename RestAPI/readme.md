@@ -23,12 +23,6 @@ implementation 'com.squareup.retrofit2:converter-gson:2.9.0'
 ```
 Retrofit cuenta con un core, pero también un conversor basado en Gson de Google
 
-### Corutinas
-Use las corutinas para crear funciones asíncronas
-```
-implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-android:1.6.4'
-```
-
 ### Ciclo de vida
 Para poder lanzar corutinas use los diferentes ambientes. Para lanzar una corutina desde Activity/Fragment debe usar
 ```

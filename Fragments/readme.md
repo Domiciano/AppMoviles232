@@ -10,7 +10,7 @@ private val viewModel: CustomViewModel by viewModels()
 ```
 
 ### Instanciar un viewmodel compartido
-El siguiente viewmodel será una única instancia para la actividad y sus fragmentos
+El siguiente viewmodel será una única instancia para la actividad y sus fragmentos. <b>Esta el la forma recomendada de instanciar viewmodels en fragmentos</b>
 ```
 private val viewModel: CustomViewModel by activityViewModels()
 ```

@@ -25,10 +25,8 @@ Para la entrega se tendrá en cuenta
     <li>A nivel de datos en la base de datos de Firestore cada uno de los usuario debe ser creado</li>
     <li>Todos los usuarios de la aplicación tienen la forma de iniciar sesión. En este apartado se califica si la autenticación se realiza con el módulo de autenticación de Firestore</li>
     <li>A nivel de datos, de debe evidenciar que luego de hacer un inicio de sesión, los datos de ese usuario almacenados en Firestore sean descargados y usados de cualquier modo en la app</li>
-    <li>Modelo Lógico DB. El modelo lógico debe mostrar todas las entidades de su aplicacación, la forma de cómo están relacionadas y la cardinalidad</li>   
-
+    <li>Modelo Lógico DB. El modelo lógico debe mostrar todas las entidades de su aplicacación, la forma de cómo están relacionadas y la cardinalidad</li> 
     <li>Modelo Estructural DB. Realice un diagrama, puede ser un modelo físico de datos o un diagrama de árbol donde muestre la estructura de la base de datos. El diagrama debe contener las colecciones y documentos de su solución así como su composición (embedding o normalizado) </li>
-
 </ol>                    
 
 ### Entrega. Función principal

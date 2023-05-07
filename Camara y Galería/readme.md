@@ -1,4 +1,4 @@
-## Configuración de la cámara
+# Configuración de los permisos
 
 Primero necesita configurar los permisos de la cámara en el manifest.xml
 
@@ -16,7 +16,7 @@ Estos permisos necesitan ser pedidos en tiempo de ejecución antes de usar la c�
 ```
 requestPermissions(arrayOf(android.Manifest.permission.CAMERA,android.Manifest.permission.READ_EXTERNAL_STORAGE), 1)
 ```
-
+# Configuración de la cámara
 Como la cámara de fotos guarda archivos, necesita configurar esa parte también en el manifest.xml
 
 ```
@@ -44,7 +44,7 @@ El contenido del archivo especifica qué rutas de la carpeta de la aplicación t
 </paths>
 ```
 
-## Uso de la cámara
+# Uso de la cámara
 Una vez configurada la cámara, necesitará un objeto launcher para activar un callback luego del llamado a la actividad de la cámara
 
 ```
@@ -69,3 +69,29 @@ fun onResult(res: ActivityResult){
 }
 ```
 Que permitirá, usando Glide, cargar una miniatura de la foto
+
+# Uso de la galería
+Para la galería sólo hace falta hacer uso de ella. Primero declare un launcher para encadenar una acción posterior a la apertura de la galería
+```
+val launcher = registerForActivityResult(ActivityResultContracts.StartActivityForResult(), ::onResult)
+```
+
+Para invocar la galería hágalo usando el sigueinte intent
+```
+val i = Intent(Intent.ACTION_GET_CONTENT)
+i.type = "image/*"
+launcher.launch(i)
+```
+En el que está definiendo que sólo mostrará imágenes usando la propiedad type.
+
+Ahora, finalmente use Glide para cargar la foto
+```
+fun onResult(res: ActivityResult){
+  if(res.resultCode == RESULT_OK){
+    Glide.with(requireContext()).load(res.data?.data).into(view.profileImage)
+  }
+}
+```
+
+
+

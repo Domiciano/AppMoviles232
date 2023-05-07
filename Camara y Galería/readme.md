@@ -98,7 +98,7 @@ fun onResult(res: ActivityResult){
 Para subir las imágenes puede usar estos comandos.
 En el caso de la cámara
 ```
-Firebase.storage.reference.child("beta").child(UUID.randomUUID().toString()).putFile(Uri.fromFile(File("${activity?.getExternalFilesDir(null)}/profile.png")))
+Firebase.storage.reference.child("beta").child(UUID.randomUUID().toString()).putFile(Uri.fromFile(file))
 ``` 
 
 En el caso de la galería

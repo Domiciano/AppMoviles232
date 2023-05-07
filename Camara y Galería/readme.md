@@ -94,4 +94,16 @@ fun onResult(res: ActivityResult){
 ```
 
 
+# Subir las imágenes a Firestore
+Para subir las imágenes puede usar estos comandos.
+En el caso de la cámara
+```
+Firebase.storage.reference.child("beta").child(UUID.randomUUID().toString()).putFile(Uri.fromFile(File("${activity?.getExternalFilesDir(null)}/profile.png")))
+``` 
+
+En el caso de la galería
+
+```
+Firebase.storage.reference.child("alfa").child(UUID.randomUUID().toString()).putFile(res.data!!.data!!)
+```
 

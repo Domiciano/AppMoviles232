@@ -43,3 +43,29 @@ El contenido del archivo especifica qué rutas de la carpeta de la aplicación t
         path="/Android/data/com.example.icesiapp231/files"/>
 </paths>
 ```
+
+## Uso de la cámara
+Una vez configurada la cámara, necesitará un objeto launcher para activar un callback luego del llamado a la actividad de la cámara
+
+```
+val launcher = registerForActivityResult(ActivityResultContracts.StartActivityForResult(), ::onResult)
+```
+
+Para ejecutar la cámara use
+```
+val i = Intent(MediaStore.ACTION_IMAGE_CAPTURE)
+val file = File("${activity?.getExternalFilesDir(null)}/profile.png")
+val uri = FileProvider.getUriForFile(requireContext(), requireActivity().packageName, file)
+i.putExtra(MediaStore.EXTRA_OUTPUT, uri)
+launcher.launch(i)
+```
+Lo que está haciendo es especificando en dónde se almacenará la foto, activity?.getExternalFilesDir(null) es la forma de pedir el path absoluto de la carpeta de datos de la aplicación. Cuando tome la foto, la acción que se encadenará después es onResult
+
+```
+fun onResult(res: ActivityResult){
+        if(res.resultCode == RESULT_OK){
+            Glide.with(requireContext()).load(File("${activity?.getExternalFilesDir(null)}/profile.png")).into(view.profileImage)
+        }
+}
+```
+Que permitirá, usando Glide, cargar una miniatura de la foto

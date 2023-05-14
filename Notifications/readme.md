@@ -1,4 +1,5 @@
-# Configurar servicio de mensajería
+# Configurar servicio de mensajería 
+Esta guía corresponde al uso de FCM Legacy, una versión anterior a la actual que permite enviar notificaciones de forma simple desde una app móvil. La siguiente versión está más diseñada para ser desplegada desde Backend
 
 ## Dependencias
 

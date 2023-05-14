@@ -18,6 +18,13 @@ class FCMService : FirebaseMessagingService() {
 }
 ```
 
+## Usar datos del RemoteMessage
+Para obtener JSON del mensaje recibido
+```
+val obj = JSONObject(message.data as Map<*, *>)
+val json = obj.toString()
+```
+
 ## Registre el servicio en el manifest
 ```
 <application>
@@ -45,13 +52,6 @@ Para android 13 o superior, se requiere usar este permiso
 Firebase.messaging.subscribeToTopic("noti").addOnSuccessListener {
     Log.e(">>>","Suscrito")
 }
-```
-
-## Notificaciones
-Para obtener JSON del mensaje recibido
-```
-val obj = JSONObject(message.data as Map<*, *>)
-val json = obj.toString()
 ```
 
 ## Crear notificaciones UI

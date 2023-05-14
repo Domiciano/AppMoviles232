@@ -47,6 +47,15 @@ Para android 13 o superior, se requiere usar este permiso
 <uses-permission android:name="android.permission.INTERNET" />
 ```
 
+## No olvide perdir el permiso en tiempo de ejecución
+```
+requestPermissions(
+            arrayOf(
+                android.Manifest.permission.POST_NOTIFICATIONS
+            ), 1
+)
+```
+
 ## Ahora puede suscribirse
 ```
 Firebase.messaging.subscribeToTopic("noti").addOnSuccessListener {

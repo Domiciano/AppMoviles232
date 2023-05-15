@@ -95,7 +95,16 @@ object NotificationUtil {
 
 }
 ```
-
+Si necesita que al pulsar la notificación se abra la actividad necesitará un pending intent
+```
+        val notifyIntent = Intent(context, MainActivity::class.java).apply {
+            flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK
+        }
+        val notifyPendingIntent = PendingIntent.getActivity(
+            context, 0, notifyIntent,
+            PendingIntent.FLAG_UPDATE_CURRENT or PendingIntent.FLAG_IMMUTABLE
+        )
+```
 ## Hacer el POST Request desde Android
 
 ```

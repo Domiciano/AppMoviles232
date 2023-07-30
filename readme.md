@@ -3,10 +3,6 @@
 # Aplicaciones Móviles
 Este es el repositorio del curso. Ejemplos de código, acceso a videos, etc. serán accesibles desde aquí.
 
-### Repositorio actual
-```
-https://github.com/Domiciano/App231
-```
 
 
 ### Organización
@@ -15,13 +11,13 @@ https://github.com/Domiciano/App231
 
 
 
-<a href="https://chat.whatsapp.com/CNiVzjZuLHW0FcR8Ngo1qs"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/WhatsApp.svg/479px-WhatsApp.svg.png" width="128"></a><br>
+<a href="https://chat.whatsapp.com/EghTqNNMnuLGiexQnVnXko"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/WhatsApp.svg/479px-WhatsApp.svg.png" width="128"></a><br>
 
-<a href="https://chat.whatsapp.com/CNiVzjZuLHW0FcR8Ngo1qs">Grupo de Whatsapp</a>
+<a href="https://chat.whatsapp.com/EghTqNNMnuLGiexQnVnXko">Grupo de Whatsapp</a>
 
 
 <b>Grupos</b>
-<a href="https://docs.google.com/spreadsheets/d/1OKWqjhu4hir5ElUflNdD5r3SW5zyIew8A3AgtHAzxgA/edit#gid=0">Grupos del curso</a>
+<a href="https://docs.google.com/spreadsheets/d/1xm16OfON1tC9PMfzrxQ4t3njNc5nBKdqwcbSh-F2WLo/edit?usp=sharing">Grupos del curso</a>
 
 <b>Notas</b>
-<a href="https://docs.google.com/spreadsheets/d/1HrVZ9f8jK0Ou6gMS5r-crR9JG8t6d7a0gbZmhY2IXek/edit?usp=sharing">Notas del curso</a>
+<a href="https://docs.google.com/spreadsheets/d/1J5pnPgUrKGLqB9dseHkyrpaidmOMUJbsaVgkUpu7ReI/edit?usp=sharing">Notas del curso</a>

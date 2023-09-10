@@ -24,6 +24,10 @@ Para poder lazar corutinas desde un viewmodel use
 implementation("androidx.lifecycle:lifecycle-viewmodel-ktx:2.6.1")
 ```
 
+### Dependencia para descargar imágenes
+```
+implementation("com.github.bumptech.glide:glide:4.16.0")
+```
 
 
 

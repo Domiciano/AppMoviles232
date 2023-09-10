@@ -25,17 +25,7 @@ implementation("androidx.lifecycle:lifecycle-viewmodel-ktx:2.6.1")
 ```
 
 
-### Instanciar un viewmodel
-El siguiente viewmodel será una nueva instancia de viewmodel
-```
-private val viewModel: CustomViewModel by viewModels()
-```
 
-### Instanciar un viewmodel compartido
-El siguiente viewmodel será una única instancia para la actividad y sus fragmentos
-```
-private val viewModel: CustomViewModel by activityViewModels()
-```
 
 # 2. Configurar Retrofit
 Use una estructura de carpetas similar a 
@@ -88,5 +78,52 @@ object RetrofitServices {
 }
 ```
 Como se observa la variable pokedexRepository está expuesta para ser usada desde la capa de viewModel
+
+
+# 3. Capa ViewModel
+Esta capa es responsable de modelar los datos que va a ver nuestro usuario.
+De esta forma, en el ejemplo de Pokemon, vamos a tener un viewModel similar a:
+```
+import androidx.lifecycle.LiveData
+import androidx.lifecycle.MutableLiveData
+import androidx.lifecycle.ViewModel
+import icesi.edu.co.emptytest.model.Pokemon
+
+class PokedexViewModel :ViewModel(){
+
+    private val _pokemon = MutableLiveData<Pokemon>()
+    private val pokemon:LiveData<Pokemon> get() = _pokemon
+
+}
+```
+En esta capa se usan las corutinas para poder ejecutar las tareas en segundo plano.
+
+Un método de corutina se ve como esto:
+```
+fun getPokemon(query:String){
+   viewModelScope.launch(Dispatchers.IO) {
+            
+   }
+}
+```
+Donde Dispatcher.IO significa que la operación dentro de las llaves se hará en segundo plano
+
+
+### Instanciar un viewmodel
+Si usted quiere instanciar un viewModel desde una Activity
+```
+private val viewModel: CustomViewModel by viewModels()
+```
+
+### Instanciar un viewmodel compartido
+Si usted quiere instanciar un ViewModel desde un fragmento, tenga en cuenta que el viewmodel tendrá alcance de Actividad, así que este objeto será igual para todos los fragmentos de la actividad de host en común
+```
+private val viewModel: CustomViewModel by activityViewModels()
+```
+
+
+
+
+
 
 

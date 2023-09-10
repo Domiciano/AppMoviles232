@@ -22,7 +22,6 @@ implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.6.1")
 Para poder lazar corutinas desde un viewmodel use
 ```
 implementation("androidx.lifecycle:lifecycle-viewmodel-ktx:2.6.1")
-
 ```
 
 

@@ -102,7 +102,7 @@ Un método de corutina se ve como esto:
 ```
 fun getPokemon(query:String){
    viewModelScope.launch(Dispatchers.IO) {
-            
+      ...
    }
 }
 ```
@@ -122,7 +122,16 @@ private val viewModel: CustomViewModel by activityViewModels()
 ```
 
 
-
+### Usar Retrofit
+Siempre dentro de una corutina se puede usar retrofit como se muestra en el ejemplo
+```
+fun getPokemon(query:String){
+        viewModelScope.launch(Dispatchers.IO) {
+            var response = RetrofitServices.pokedexRepository.getPokemon(query).execute()
+            val pokemon = response.body()
+        }
+    }
+```
 
 
 

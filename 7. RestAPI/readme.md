@@ -68,7 +68,7 @@ import retrofit2.converter.gson.GsonConverterFactory
 object RetrofitServices {
 
     private val pokedexService = Retrofit.Builder()
-        .baseUrl("https://pokeapi.co/api/v2")
+        .baseUrl("https://pokeapi.co/api/v2/")
         .addConverterFactory(GsonConverterFactory.create())
         .build()
     val pokedexRepository: PokedexRepository = pokedexService.create(PokedexRepository::class.java)

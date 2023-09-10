@@ -96,7 +96,7 @@ import icesi.edu.co.emptytest.model.Pokemon
 class PokedexViewModel :ViewModel(){
 
     private val _pokemon = MutableLiveData<Pokemon>()
-    private val pokemon:LiveData<Pokemon> get() = _pokemon
+    val pokemon:LiveData<Pokemon> get() = _pokemon
 
 }
 ```

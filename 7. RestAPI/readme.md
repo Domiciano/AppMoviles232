@@ -14,7 +14,6 @@ implementation 'com.squareup.retrofit2:converter-gson:2.9.0'
 Retrofit cuenta con un core, pero también un conversor basado en Gson de Google
 
 ### Dependencias de las corutinas
-### Ciclo de vida
 Para poder lanzar corutinas use los diferentes ambientes. Para lanzar una corutina desde Activity/Fragment debe usar
 ```
 implementation 'androidx.lifecycle:lifecycle-runtime-ktx:2.6.1'

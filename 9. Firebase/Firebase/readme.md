@@ -17,8 +17,8 @@ La pestaña de Comunidad muestra un RecyclerView que contiene todos los posts pu
 
 ## Dependencias necesarias
 ```
-implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.5.1")
-implementation("androidx.lifecycle:lifecycle-viewmodel-ktx:2.5.1")
-implementation("androidx.fragment:fragment-ktx:1.5.2")
-implementation("org.jetbrains.kotlinx:kotlinx-coroutines-play-services:1.6.4")
+implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.6.2")
+implementation("androidx.lifecycle:lifecycle-viewmodel-ktx:2.6.2")
+implementation("androidx.fragment:fragment-ktx:1.6.1")
+implementation("org.jetbrains.kotlinx:kotlinx-coroutines-play-services:1.7.3")
 ```

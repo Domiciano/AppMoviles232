@@ -106,5 +106,3 @@ En el caso de la galería
 ```
 Firebase.storage.reference.child("alfa").child(UUID.randomUUID().toString()).putFile(res.data!!.data!!)
 ```
-# Tarea
-Use alguno de los recyclerview del proyecto para representar los post de los usuarios

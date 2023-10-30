@@ -30,3 +30,9 @@ val locationManager = requireActivity().getSystemService(Context.LOCATION_SERVIC
             googleMap.moveCamera(CameraUpdateFactory.newLatLng(LatLng(latitude,longitude)))
         }
 ```
+Si quiere calcular la distancia entre 2 puntos, puede usar
+
+```
+val distance = Location.distanceBetween(pointA.latitude, pointA.longitude, pointB.latitude, pointB.longitude, Metrics.KILOMETERS)
+```
+
